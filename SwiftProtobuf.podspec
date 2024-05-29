@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.7.0'
 
   s.source_files = 'Sources/SwiftProtobuf/**/*.swift'
-  s.resources    = 'Sources/*.{png,bundle,xcprivacy}'
-
+  s.resource_bundles = {'SwiftProtobuf' => ['Sources/Privacyinfo.xcprivacy']}
   s.swift_versions = ['4.0', '4.2', '5.0']
 end
